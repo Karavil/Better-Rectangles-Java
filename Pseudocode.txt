@@ -1,0 +1,45 @@
+BetterRectangle class:
+	
+	extends to Rectangle class (java.awt.Rectangle)
+
+	has 4 constructors
+		1. no input - call super() then set width and height to 1 and origin to 0,0
+		2. width and height - super() then set width and height and origin
+		3. x and y and width and height - super() then set values
+		4. another BetterRectangle - super() then copy values over
+
+	2 override methods
+		toString()
+		equals()
+
+	4 Acessors
+		int - getArea()
+		int - getPerimeter()
+		float - getSlope (height/width) [2 decimal places]
+		Point - getMidPoint, from center to anchor, rounded up to int value
+
+	4 utility methods
+		congruenct(other) width+height is same
+		equivalent(other) perimeter is same
+		similar(other) area is same
+		concentric(other) midpoint is same
+
+	1 mutator
+		boolean scaleBy(scale) new height and width is old ones multiplied by scale
+		return true after done, false if scale is non-positive (negative or 0)
+
+
+Tester class:
+
+	main class that will:
+
+	create 4 "better" rectangles 
+	test the accessor methods with rectangle 1
+	test the utility and equals() methods with rectangle 1 and 2
+	test the mutator method with 4
+
+	and print expected output with all
+
+
+	
+	
